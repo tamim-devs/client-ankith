@@ -37,67 +37,74 @@ const HomeCard = () => {
 
 
       {/* Middle Card */}
-      <Link
-  className="bg-gradient-to-r from-[#1a1a1a] to-[#0d0d0d]
-  rounded-2xl shadow-lg border-t border-gray-600
-  px-6 py-6 flex flex-col gap-8 justify-center
-  w-full md:flex-1"
+   <Link
   to="/landing"
+  className="
+    bg-gradient-to-r from-[#1a1a1a] to-[#0d0d0d]
+    rounded-2xl shadow-lg border border-gray-700
+    px-4 sm:px-6 py-5
+    flex flex-col justify-between
+    w-full md:flex-1
+  "
 >
-  <div>
-    <div className="flex items-center mb-10 justify-center gap-6 text-white flex-wrap">
-
-      <div className="w-20 h-20 flex items-center justify-center">
-        <img
-          src="/images/COLLABORATE.png"
-          className="w-full h-full object-contain"
-        />
-      </div>
-
-      <div className="w-20 h-20 flex items-center justify-center">
-        <img
-          src="/images/ENVISION.png"
-          className="w-full h-full object-contain"
-        />
-      </div>
-
-      <div className="p-4 w-20 h-20">
-        <div className="max-w-full max-h-full flex items-center justify-center">
-          <img
-            src="/images/EVOLVE.png"
-            className="w-full h-full object-contain"
-          />
-        </div>
-      </div>
-
-      <div className="w-20 h-20 flex items-center justify-center">
-        <img
-          src="/images/VENTURE-BUILDING.png"
-          className="w-full h-full object-contain"
-        />
-      </div>
-
+  {/* ICON SECTION */}
+ <div
+  className="
+    w-full
+    bg-black/30
+    rounded-xl
+    p-4 sm:p-6
+    flex items-center justify-center
+  "
+>
+  <div
+    className="
+      grid grid-cols-2
+      gap-4
+      sm:flex sm:flex-wrap sm:justify-center
+      sm:gap-6
+    "
+  >
+    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex items-center justify-center">
+      <img src="/images/COLLABORATE.png" className="w-full h-full object-contain" />
     </div>
 
-    <div className="flex justify-between items-center w-full">
-      <div className="flex flex-col gap-1">
-        <p className="text-gray-400 text-sm">SPECIALIZATION</p>
-        <p className="text-xl font-semibold text-white">My Approach</p>
-      </div>
+    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex items-center justify-center">
+      <img src="/images/ENVISION.png" className="w-full h-full object-contain" />
+    </div>
 
-      <Link
-        to="/landing"
-        className="w-10 hover:scale-110 h-10 flex items-center justify-center rounded-full"
-      >
-        <img
-          src="/images/Next Icon.png"
-          className="w-6 h-6 opacity-50"
-        />
-      </Link>
+    <div className="w-9 h-9 sm:w-12 sm:h-12 md:w-16 md:h-16 flex items-center justify-center p-1">
+  <img
+    src="/images/EVOLVE.png"
+    className="max-w-full max-h-full object-contain"
+  />
+</div>
+
+    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex items-center justify-center">
+      <img src="/images/VENTURE-BUILDING.png" className="w-full h-full object-contain" />
+    </div>
+  </div>
+</div>
+
+  {/* TEXT SECTION */}
+  <div className="flex justify-between items-center">
+    <div>
+      <p className="text-gray-400 text-[10px] sm:text-sm tracking-wide">
+        SPECIALIZATION
+      </p>
+      <p className="text-base sm:text-xl font-semibold text-white">
+        My Approach
+      </p>
+    </div>
+
+    <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full hover:scale-110 transition">
+      <img
+        src="/images/Next Icon.png"
+        className="w-4 h-4 sm:w-6 sm:h-6 opacity-60"
+      />
     </div>
   </div>
 </Link>
-
 
 
 
